@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-import { brainEver } from '/Users/andrei/frontend-project-lvl1/src/round3.js';
-
+import playBrainEven from '/Users/andrei/frontend-project-lvl1/src/brain-even.js';
+console.log(playBrainEven());
 
 
 

@@ -9,5 +9,4 @@ lint:
 	npx eslint .
 brain-even:
 	node bin/brain-even.js
-round3:
-	node src/round3.js
+
