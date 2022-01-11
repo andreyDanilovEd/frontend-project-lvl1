@@ -17,13 +17,13 @@ const playBrainEven = () => {
         console.log('Question: ' + random);
         const userAnswer = readlineSync.question('Your answer: ');
         if (counter === 2) { 
-            console.log('Congratulation, ' + name + '!');    
+            return 'Congratulation, ' + name + '!';    
         } 
         else if (userAnswer === brainEvenChecker(random)) {
             console.log('Correct!');
         } 
         else if (userAnswer !== brainEvenChecker(random)) {
-            return console.log (userAnswer + ' is wrong answer' + '\nTry again, ' + name);
+            return userAnswer + ' is wrong answer' + '\nTry again, ' + name;
         }
     }
 }       
