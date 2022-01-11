@@ -13,8 +13,7 @@ const playBrainEven = () => {
     }
     let random = Math.floor(Math.random() * 10) + 1;
     for (let counter = 0; counter < 3; counter += 1) {
-        //questionNumber = questionNumber + 1;
-        random = Math.floor(Math.random(random) * 10) + 1;
+        random = Math.floor(Math.random() * 10) + 1;
         console.log('Question: ' + random);
         const userAnswer = readlineSync.question('Your answer: ');
         if (counter === 2) { 
