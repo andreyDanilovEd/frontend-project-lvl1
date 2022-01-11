@@ -23,8 +23,8 @@ const playBrainEven = () => {
             console.log('Correct!');
         } 
         else if (userAnswer !== brainEvenChecker(questionNumber)) {
-            console.log (userAnswer + ' is wrong answer' + '\nTry again, ' + name);
-            break;
+            return console.log (userAnswer + ' is wrong answer' + '\nTry again, ' + name);
+            
         }
     }
 }       
