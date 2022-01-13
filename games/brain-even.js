@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 const playBrainEven = () => {
     console.log('Welcome to Brain games!');
     const name = readlineSync.question('May I have your name? ');
-    console.log('Hi, ' + name + '!');
+    console.log('Hello, ' + name + '!');
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     const brainEvenChecker = (number) => {
         if (number % 2 === 0){
