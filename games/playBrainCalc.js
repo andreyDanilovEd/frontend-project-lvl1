@@ -31,13 +31,14 @@ const playCalc = () => {
    let random1 = Math.floor(Math.random() * 10) + 1;
    let random2 = Math.floor(Math.random() * 10) + 1;
     // функция для запуска 3 раундов
+    const arr = [" ", "*", "+", "-"];
 for (let counter = 0; counter < 3; counter++) {
     random1 = Math.floor(Math.random() * 10) + 1;
     random2 = Math.floor(Math.random() * 10) + 1;
-    const arr = ["*", "+", "-"];
-    let question = random1 + ' ' + arr[counter] + ' ' + random2;
+    let randomOperatorIndex = Math.floor(Math.random() * 3) + 1;
+    let operator = arr[randomOperatorIndex];
+    let question = random1 + ' ' + operator + ' ' + random2;
     console.log('Question: ' + question);
-    let operator = String(arr[counter]);
     let rightAnswer = checkOperator(operator);
     const userAnswer = readlineSync.question('Your answer: ');
     if (counter === 2) { 
