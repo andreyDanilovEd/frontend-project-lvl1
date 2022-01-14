@@ -8,4 +8,6 @@
 https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR
 ### Game Brain-calc
 https://asciinema.org/a/TAOxyWA3eMy2R9oS6K42hgcoI
+### Game Brain-gcd
+https://asciinema.org/a/rUUvEGQ5SGssXTWTzl0PXqiTz
 
