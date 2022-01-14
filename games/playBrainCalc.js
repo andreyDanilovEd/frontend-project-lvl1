@@ -9,23 +9,21 @@ const playCalc = () => {
 
     // функция для проверки ответа
    const checkOperator = (operator) => {
+       let answer = 0;
+       let answer2 = 0;
+       let answer3 = 0;
 
     switch (operator) {
         case '-':
-          // Делаем что-то полезное
-          let answer = random1 - random2;
+          answer = random1 - random2;
           return answer;
-          //break;
         case '+':
-          // Делаем что-то полезное
-          let answer2 = random1 + random2;
+          answer2 = random1 + random2;
           return answer2;
         case '*':
-          // Делаем что-то полезное
-          let answer3 = random1 * random2;
+          answer3 = random1 * random2;
           return answer3;
         default:
-          // Что-то делаем
       }
    }   
    let random1 = Math.floor(Math.random() * 10) + 1;
