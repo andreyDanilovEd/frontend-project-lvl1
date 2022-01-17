@@ -28,7 +28,7 @@ const playCalc = () => {
    }   
    let random1 = Math.floor(Math.random() * 10) + 1;
    let random2 = Math.floor(Math.random() * 10) + 1;
-    // цикл для запуска 3 раундов
+    // функция для запуска 3 раундов
     const arr = [" ", "*", "+", "-"];
 for (let counter = 0; counter < 3; counter++) {
     random1 = Math.floor(Math.random() * 10) + 1;
