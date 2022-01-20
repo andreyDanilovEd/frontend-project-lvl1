@@ -9,34 +9,37 @@ const playBrainProg = () => {
     // функция для наполнения массива
     let firstRandomNumber = Math.floor(Math.random() * 100) + 1;
     let randomStepNumber = Math.floor(Math.random() * 10) + 2;
+    let rightAnswer = [];
 
     const createRandomArr = (number) => {
 
         const randomArr = [];
         randomArr.push(number);
         for (let counter = 0; counter < 9; counter++) {
+            
             if (counter < 9) {
                 randomArr.push(Number(randomArr[counter]) + Number(randomStepNumber));
-                //console.log(randomArr);
-            } else if (randomArr.length > 8) {
-                randomArr.splice(3, 1);
-                console.log(randomArr);
-            }  
-                
+            }   
             }
-            //console.log(randomArr);
-            randomArr.splice(randomArr[randomStepNumber], 1);
+            let forGap = `..`;
+            let randomIndex = Math.floor(Math.random() * 9) + 1;
+            rightAnswer = randomArr[randomIndex];
+            randomArr.splice(randomIndex, 1, forGap);
             return randomArr;
         }
-        console.log(createRandomArr(firstRandomNumber));
+             // функция для запуска 3 раундов
+ for (let counter = 0; counter < 3; counter++) {
+    console.log('Question: ' + createRandomArr(firstRandomNumber));
+    let userAnswer = readlineSync.question('Your answer: ');
+    if (counter === 2) { 
+        return 'Congratulation, ' + name + '!';    
+    } 
+    else if (Number(userAnswer) === rightAnswer) {
+        console.log('Correct!');
+    } 
+    else if (Number(userAnswer) !== rightAnswer) {
+        return "'" + userAnswer + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + rightAnswer + "'" + `\nLet's try again, ` + name;
     }
-   
-    //let random1 = Math.floor(Math.random() * 10) + 1;
-    //let random2 = Math.floor(Math.random() * 10) + 1;
-     
-     // функция для запуска 3 раундов
- //for (let counter = 0; counter < 3; counter++) {
-     
-
-//}
+}
+} 
 export default playBrainProg;
