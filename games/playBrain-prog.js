@@ -7,12 +7,13 @@ const playBrainProg = () => {
     console.log('What number is missing in the progression?');
 
     // функция для наполнения массива
-    let firstRandomNumber = Math.floor(Math.random() * 100) + 1;
-    let randomStepNumber = Math.floor(Math.random() * 10) + 2;
+    
+    
     let rightAnswer = [];
 
-    const createRandomArr = (number) => {
-
+    const createRandomArr = (number, step) => {
+        let randomStepNumber = step;
+        
         const randomArr = [];
         randomArr.push(number);
         for (let counter = 0; counter < 9; counter++) {
@@ -29,7 +30,9 @@ const playBrainProg = () => {
         }
              // функция для запуска 3 раундов
  for (let counter = 0; counter < 3; counter++) {
-    console.log('Question: ' + createRandomArr(firstRandomNumber));
+    let firstRandomNumber = Math.floor(Math.random() * 100) + 1;
+    let randomStepNumber = Math.floor(Math.random() * 10) + 2;
+    console.log('Question: ' + createRandomArr(firstRandomNumber, randomStepNumber));
     let userAnswer = readlineSync.question('Your answer: ');
     if (counter === 2) { 
         return 'Congratulation, ' + name + '!';    
