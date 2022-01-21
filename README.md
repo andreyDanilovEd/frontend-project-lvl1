@@ -12,4 +12,6 @@ https://asciinema.org/a/TAOxyWA3eMy2R9oS6K42hgcoI
 https://asciinema.org/a/rUUvEGQ5SGssXTWTzl0PXqiTz
 ### Game Brain-prog
 https://asciinema.org/a/CIvNpOExqDJkWostV7oXU595K
+### Game Brain-prime
+https://asciinema.org/a/b8QZssHd8zRPwsFcFPeiRi9iP
 
