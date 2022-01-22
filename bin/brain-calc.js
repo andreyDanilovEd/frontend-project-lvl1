@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-import playCalc from '/Users/andrei/frontend-project-lvl1/games/playBrainCalc.js';
+import playCalc from '../games/playBrainCalc.js';
+
 console.log(playCalc());
