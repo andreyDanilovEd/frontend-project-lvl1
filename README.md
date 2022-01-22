@@ -18,9 +18,8 @@
 - Brain Progression - надо найти недостающий элемент прогрессии. Для запуска выполните brain-progression
 - Brain Prime - надо ответить является-ли число простым. Для запуска выполните brain-prime.
 
-Brain Even
-![asciicast](https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR)](https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR)
-
+### Game Brain Even
+https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR
 ### Game Brain-calc
 https://asciinema.org/a/TAOxyWA3eMy2R9oS6K42hgcoI
 ### Game Brain-gcd
