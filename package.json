@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/andreyDanilovEd/frontend-project-lvl1#readme",
   "dependencies": {
-    
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint": "^8.7.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
