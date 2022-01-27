@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playCalc from '../games/playBrainCalc.js';
+import { gameRule, getQuestionAndAnswer } from '../games/playBrainCalc.js';
+import gameEngine from '../src/index.js';
 
-console.log(playCalc());
+gameEngine(gameRule, getQuestionAndAnswer);
