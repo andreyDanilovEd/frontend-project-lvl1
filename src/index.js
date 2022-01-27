@@ -8,7 +8,7 @@ const gameEngine = (gameRule, getRoundData) => {
 
   for (let counter = 0; counter < 3; counter += 1) {
     const [question, rightAnswer] = getRoundData();
-    console.log(question);
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== rightAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);

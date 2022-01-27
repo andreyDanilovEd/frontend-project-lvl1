@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playBrainProg from '../games/playBrain-prog.js';
+import { gameRule, getQuestionAndAnswer } from '../games/playBrain-prog.js';
+import gameEngine from '../src/index.js';
 
-console.log(playBrainProg());
+gameEngine(gameRule, getQuestionAndAnswer);
