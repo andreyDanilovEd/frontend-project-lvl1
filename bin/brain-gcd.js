@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playBrainGcd from '../games/playBrain-gcd.js';
+import { gameRule, getQuestionAndAnswer } from '../games/playBrain-gcd.js';
+import gameEngine from '../src/index.js';
 
-console.log(playBrainGcd());
+gameEngine(gameRule, getQuestionAndAnswer);
