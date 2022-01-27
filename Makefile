@@ -1,6 +1,8 @@
 
 install: 
 	npm ci
+link:
+	sudo npm link
 brain-games:	
 	node bin/brain-games.js
 publish:
@@ -19,5 +21,6 @@ brain-prime:
 	node bin/brain-prime.js
 brain-calc2:
 	node bin/brain-calc2.js	
+
 
 
