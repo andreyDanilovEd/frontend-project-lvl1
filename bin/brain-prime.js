@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import playPrime from '../games/playPrime.js';
+import { gameRule, getQuestionAndAnswer } from '../games/playPrime.js';
+import gameEngine from '../src/index.js';
 
-console.log(playPrime());
+gameEngine(gameRule, getQuestionAndAnswer);
