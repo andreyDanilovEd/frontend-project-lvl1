@@ -19,7 +19,7 @@
 - Brain Prime - надо ответить является-ли число простым. Для запуска выполните brain-prime.
 
 ### Game Brain Even
-https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR
+https://asciinema.org/a/UonqMsYYhUGdzDbLZgThHTaQ3
 ### Game Brain-calc
 https://asciinema.org/a/TAOxyWA3eMy2R9oS6K42hgcoI
 ### Game Brain-gcd
