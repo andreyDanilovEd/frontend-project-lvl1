@@ -7,7 +7,7 @@ const checkNumber = (num) => {
     if (num % counter === 0) {
       result += 1;
     }
-    if (result > 2) {
+    if (result > 2 || num === 1) {
       resultCheck = 'no';
     }
   }
