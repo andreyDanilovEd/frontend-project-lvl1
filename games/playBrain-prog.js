@@ -1,10 +1,10 @@
 const gameRule = 'What number is missing in the progression?';
-const createRandomArr = (number, step) => {
+const createRandomArr = (number, step, size) => {
   const randomStepNumber = step;
 
   const randomArr = [];
   randomArr.push(number);
-  for (let counter = 0; counter < 9; counter += 1) {
+  for (let counter = 0; counter < size; counter += 1) {
     if (counter < 9) {
       randomArr.push(Number(randomArr[counter]) + Number(randomStepNumber));
     }
@@ -14,12 +14,14 @@ const createRandomArr = (number, step) => {
 const getQuestionAndAnswer = () => {
   const firstRandomNumber = Math.floor(Math.random() * 100) + 1;
   const randomStepNumber = Math.floor(Math.random() * 10) + 2;
-  const fullArr = createRandomArr(firstRandomNumber, randomStepNumber);
+  const randomSizeArr = Math.floor(Math.random() * 3) + 4;
+  const fullArr = createRandomArr(firstRandomNumber, randomStepNumber, randomSizeArr);
   const forGap = '..';
-  const randomIndex = Math.floor(Math.random() * 9) + 1;
-  const rightAnswer = fullArr[randomIndex].toString();
+  const randomIndex = randomSizeArr - 1;
+  console.log(randomIndex);
+  const rightAnswer = fullArr[randomIndex];
   fullArr.splice(randomIndex, 1, forGap);
   const question = fullArr;
-  return [question, rightAnswer];
+  return [question, rightAnswer.toString()];
 };
 export { gameRule, getQuestionAndAnswer };
