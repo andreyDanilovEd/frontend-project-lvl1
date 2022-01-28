@@ -24,7 +24,7 @@ https://asciinema.org/a/7LkqgeB3Ax6zo2KM9aRKELGMR
 https://asciinema.org/a/TAOxyWA3eMy2R9oS6K42hgcoI
 ### Game Brain-gcd
 https://asciinema.org/a/rUUvEGQ5SGssXTWTzl0PXqiTz
-### Game Brain-prog
-https://asciinema.org/a/CIvNpOExqDJkWostV7oXU595K
+### Game Brain-progression
+https://asciinema.org/a/NYx01L5HqHSMZ1C1SegrdOqxQ
 ### Game Brain-prime
 https://asciinema.org/a/b8QZssHd8zRPwsFcFPeiRi9iP

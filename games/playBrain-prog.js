@@ -16,7 +16,6 @@ const getQuestionAndAnswer = () => {
   const fullArr = createRandomArr(firstRandomNumber, randomStepNumber, randomSizeArr);
   const forGap = '..';
   const randomIndex = Math.floor(Math.random() * 3) + 1;
-  console.log(randomIndex);
   const rightAnswer = fullArr[randomIndex];
   fullArr.splice(randomIndex, 1, forGap);
   const question = fullArr.join(' ');
