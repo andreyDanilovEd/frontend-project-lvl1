@@ -26,6 +26,8 @@
   },
   "homepage": "https://github.com/andreyDanilovEd/frontend-project-lvl1#readme",
   "dependencies": {
+    "brain-even": "^1.0.0",
+    "brain-prog": "bin/brain-progression.js",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
