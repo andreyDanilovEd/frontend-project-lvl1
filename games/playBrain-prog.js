@@ -5,9 +5,7 @@ const createRandomArr = (number, step, size) => {
   const randomArr = [];
   randomArr.push(number);
   for (let counter = 0; counter < size; counter += 1) {
-    if (counter < 9) {
-      randomArr.push(Number(randomArr[counter]) + Number(randomStepNumber));
-    }
+    randomArr.push(Number(randomArr[counter]) + Number(randomStepNumber));
   }
   return randomArr;
 };
@@ -17,7 +15,7 @@ const getQuestionAndAnswer = () => {
   const randomSizeArr = Math.floor(Math.random() * 3) + 4;
   const fullArr = createRandomArr(firstRandomNumber, randomStepNumber, randomSizeArr);
   const forGap = '..';
-  const randomIndex = randomSizeArr - 1;
+  const randomIndex = Math.floor(Math.random() * 3) + 1;
   console.log(randomIndex);
   const rightAnswer = fullArr[randomIndex];
   fullArr.splice(randomIndex, 1, forGap);
