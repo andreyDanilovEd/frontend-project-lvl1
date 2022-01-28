@@ -21,7 +21,7 @@ const getQuestionAndAnswer = () => {
   console.log(randomIndex);
   const rightAnswer = fullArr[randomIndex];
   fullArr.splice(randomIndex, 1, forGap);
-  const question = fullArr;
+  const question = fullArr.join(' ');
   return [question, rightAnswer.toString()];
 };
 export { gameRule, getQuestionAndAnswer };
