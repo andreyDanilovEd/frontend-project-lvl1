@@ -17,6 +17,6 @@ const gameEngine = (gameRule, getRoundData) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 export default gameEngine;
