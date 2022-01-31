@@ -8,6 +8,8 @@ const findDivider = (a, b) => {
     maxRandomNumber = toNumberA;
   } else if (toNumberA < toNumberB) {
     maxRandomNumber = toNumberB;
+  } else if (toNumberB === toNumberA) {
+    maxRandomNumber = toNumberA;
   }
   let maxDivider = 1;
   for (let counter = maxRandomNumber; counter > 0; counter -= 1) {
