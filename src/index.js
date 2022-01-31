@@ -5,8 +5,9 @@ const gameEngine = (gameRule, getRoundData) => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(gameRule);
+  const raund = 3;
 
-  for (let counter = 0; counter < 3; counter += 1) {
+  for (let counter = 0; counter < raund; counter += 1) {
     const [question, rightAnswer] = getRoundData();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');

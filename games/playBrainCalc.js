@@ -14,9 +14,8 @@ const checkOperator = (random1, random2, operator) => {
     case '*':
       answer = random1 * random2;
       return answer;
-    default:
+    default: throw new Error(`Unknown order state: '${operator}'!`);
   }
-  return answer;
 };
 const getQuestionAndAnswer = () => {
   const randomOperatorIndex = Math.floor(Math.random() * 3) + 1;
