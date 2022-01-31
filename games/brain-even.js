@@ -1,3 +1,5 @@
+import randomNum from '../src/randomNum.js';
+
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 const brainEvenChecker = (number) => {
   if (number % 2 === 0) {
@@ -6,7 +8,7 @@ const brainEvenChecker = (number) => {
   return 'no';
 };
 const getQuestionAndAnswer = () => {
-  const question = Math.floor(Math.random() * 10) + 1;
+  const question = randomNum(0, 100) + 1;
   const rightAnswer = brainEvenChecker(question);
   return [question, rightAnswer];
 };

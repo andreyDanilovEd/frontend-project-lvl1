@@ -1,5 +1,7 @@
+import randomNum from '../src/randomNum.js';
+
 const gameRule = 'What is the result of the expression?';
-const arr = [' ', '*', '+', '-'];
+const arr = ['*', '+', '-'];
 
 const checkOperator = (random1, random2, operator) => {
   let answer = 0;
@@ -18,9 +20,9 @@ const checkOperator = (random1, random2, operator) => {
   }
 };
 const getQuestionAndAnswer = () => {
-  const randomOperatorIndex = Math.floor(Math.random() * 3) + 1;
-  const random1 = Math.floor(Math.random() * 10) + 1;
-  const random2 = Math.floor(Math.random() * 10) + 1;
+  const randomOperatorIndex = randomNum(0, 3);
+  const random1 = randomNum(0, 10);
+  const random2 = randomNum(0, 10);
   const question = `${random1} ${arr[randomOperatorIndex]} ${random2}`;
   const rightAnswer = checkOperator(random1, random2, arr[randomOperatorIndex]).toString();
   return [question, rightAnswer];

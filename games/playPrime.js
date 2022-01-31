@@ -1,3 +1,5 @@
+import randomNum from '../src/randomNum.js';
+
 const gameRule = 'Answer "yes" if the number is prime, otherwise answer "no".';
 
 const checkNumber = (num) => {
@@ -14,7 +16,7 @@ const checkNumber = (num) => {
   return resultCheck;
 };
 const getQuestionAndAnswer = () => {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  const randomNumber = randomNum(0, 100);
   const rightAnswer = checkNumber(randomNumber);
   const question = randomNumber;
   return [question, rightAnswer];

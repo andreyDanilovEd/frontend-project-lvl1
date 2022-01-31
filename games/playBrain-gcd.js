@@ -1,3 +1,5 @@
+import randomNum from '../src/randomNum.js';
+
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const findDivider = (a, b) => {
@@ -22,8 +24,8 @@ const findDivider = (a, b) => {
 };
 
 const getQuestionAndAnswer = () => {
-  const random1 = Math.floor(Math.random() * 50) + 1;
-  const random2 = Math.floor(Math.random() * 10) + 1;
+  const random1 = randomNum(1, 100);
+  const random2 = randomNum(1, 100);
   const question = `${random1} ${random2}`;
   const rightAnswer = findDivider(random1, random2).toString();
   return [question, rightAnswer];
