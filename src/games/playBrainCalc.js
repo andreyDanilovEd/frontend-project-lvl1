@@ -1,4 +1,5 @@
 import randomNum from '../randomNum.js';
+import gameEngine from '../index.js';
 
 const gameRule = 'What is the result of the expression?';
 const arr = ['*', '+', '-'];
@@ -27,4 +28,7 @@ const getQuestionAndAnswer = () => {
   const rightAnswer = checkOperator(random1, random2, arr[randomOperatorIndex]).toString();
   return [question, rightAnswer];
 };
-export { gameRule, getQuestionAndAnswer };
+const startGame = () => {
+  gameEngine(gameRule, getQuestionAndAnswer);
+};
+export default startGame;

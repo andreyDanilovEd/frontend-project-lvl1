@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { gameRule, getQuestionAndAnswer } from '../src/games/brain-even.js';
-import gameEngine from '../src/index.js';
+import startGame from '../src/games/brain-even.js';
 
-gameEngine(gameRule, getQuestionAndAnswer);
+startGame();

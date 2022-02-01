@@ -1,4 +1,5 @@
 import randomNum from '../randomNum.js';
+import gameEngine from '../index.js';
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (number) => {
@@ -18,4 +19,7 @@ const getQuestionAndAnswer = () => {
   rightAnswer = 'no';
   return [question, rightAnswer];
 };
-export { gameRule, getQuestionAndAnswer };
+const startGame = () => {
+  gameEngine(gameRule, getQuestionAndAnswer);
+};
+export default startGame;

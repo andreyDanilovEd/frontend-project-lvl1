@@ -1,4 +1,5 @@
 import randomNum from '../randomNum.js';
+import gameEngine from '../index.js';
 
 const gameRule = 'What number is missing in the progression?';
 const createRandomArr = (number, step, size) => {
@@ -23,4 +24,7 @@ const getQuestionAndAnswer = () => {
   const question = fullArr.join(' ');
   return [question, rightAnswer.toString()];
 };
-export { gameRule, getQuestionAndAnswer };
+const startGame = () => {
+  gameEngine(gameRule, getQuestionAndAnswer);
+};
+export default startGame;
