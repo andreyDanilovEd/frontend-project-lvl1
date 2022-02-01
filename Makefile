@@ -1,4 +1,3 @@
-
 install: 
 	npm ci
 link:
@@ -19,7 +18,7 @@ brain-progression:
 	node bin/brain-progression.js
 brain-prime:
 	node bin/brain-prime.js
-	
+## Если убрать пробелы, то команды перестают работать	
 
 
 
