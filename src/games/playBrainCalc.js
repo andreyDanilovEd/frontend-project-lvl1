@@ -1,4 +1,4 @@
-import randomNum from '../src/randomNum.js';
+import randomNum from '../randomNum.js';
 
 const gameRule = 'What is the result of the expression?';
 const arr = ['*', '+', '-'];

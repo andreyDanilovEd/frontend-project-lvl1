@@ -1,4 +1,4 @@
-import randomNum from '../src/randomNum.js';
+import randomNum from '../randomNum.js';
 
 const gameRule = 'What number is missing in the progression?';
 const createRandomArr = (number, step, size) => {
