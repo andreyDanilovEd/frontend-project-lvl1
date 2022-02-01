@@ -16,7 +16,7 @@ const checkNumber = (num) => {
   return resultCheck;
 };
 const getQuestionAndAnswer = () => {
-  const randomNumber = randomNum(0, 100);
+  const randomNumber = randomNum(1, 100);
   const rightAnswer = checkNumber(randomNumber);
   const question = randomNumber;
   return [question, rightAnswer];
