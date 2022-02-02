@@ -4,11 +4,11 @@ import gameEngine from '../index.js';
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const findDivider = (a, b) => {
-  const maxDivider = a % b;
+  const remainder = a % b;
   if (a === 0 || b === 0) {
     return a + b;
   }
-  return findDivider(b, maxDivider);
+  return findDivider(b, remainder);
 };
 
 const getQuestionAndAnswer = () => {
